@@ -24,7 +24,7 @@ public class calculator {
     }
 
     @GET
-    @Path("param/{username: [A-Z][a-z]*}")
+    @Path("param1/{username: [A-Z][a-z]*}")
     public String getParam1(@PathParam("username") String userName){
         return "username " + userName;
     }
