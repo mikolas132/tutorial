@@ -46,22 +46,5 @@ public class Sum{
             return "not match to no one operation";
 
         return String.valueOf(result);
-
-/*        switch (this.operation){
-            case "multiplication":
-                result = this.num1 * this.num2;
-                break;
-            case "division":
-                result = (float) this.num1/this.num2;
-                break;
-            case "sum":
-                result = this.num1 + this.num2;
-                break;
-            case "subtraction":
-                result = this.num1 - this.num2;
-                break;
-            default:
-                    return "not match to no one operation";
-        }*/
     }
 }
