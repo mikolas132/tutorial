@@ -4,6 +4,7 @@ public class Sum{
     int num1;
     int num2;
     String operation;
+    String finalResult;
 
     public String getOperation() {
         return operation;
@@ -45,6 +46,22 @@ public class Sum{
         else
             return "not match to no one operation";
 
+        finalResult = String.valueOf(result);
         return String.valueOf(result);
+    }
+    @Override
+    public String toString(){
+        String Operation;
+        if(this.operation.equals("multiplication"))
+            Operation ="*";
+        else if (this.operation.equals("division"))
+            Operation = "/";
+        else if (this.operation.equals("sum"))
+            Operation = "+";
+        else if(this.operation.equals("subtraction"))
+            Operation = "-";
+        else
+            return "not match to no one operation";
+        return num1+Operation+num2+"="+finalResult;
     }
 }

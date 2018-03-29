@@ -17,6 +17,13 @@ public class calculator {
         return sum.Result();
     }
 
+    @POST
+    @Path("simple1")
+    public String getResultString(Sum sum){
+        sum.Result();
+        return sum.toString();
+    }
+
     @GET
     @Path("param/{username}")
     public String getParam(@PathParam("username") String userName){
