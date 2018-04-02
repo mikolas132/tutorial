@@ -34,7 +34,4 @@ public abstract class Functionary {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
-
-
 }
