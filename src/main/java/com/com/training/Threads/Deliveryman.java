@@ -26,6 +26,6 @@ public class Deliveryman implements Runnable{
             open = membersList.isOpen();
             nPending = membersList.getPendingEmails();
         }
-        System.out.println("Atividades finalizadas");
+        System.out.println("Activities concluded");
     }
 }
